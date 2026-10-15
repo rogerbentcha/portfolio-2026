@@ -17,7 +17,7 @@ en 13 px. Les expériences affichent uniquement l’entreprise, les dates et le 
 affichent le diplôme, les dates et l’école en plus petit. Les dates restent à droite sur la ligne
 du titre, y compris sur mobile. Les projets précèdent les expériences dans la page et la navigation,
 sans séparateurs horizontaux entre les sections. Le logo latéral s’affiche sans le nom.
-Un lien « Télécharger le CV » clôt la navigation et télécharge le PDF de `public/cv` dans la langue du site.
+Un lien « Télécharger mon CV » clôt la navigation et télécharge le PDF de `public/cv` dans la langue du site.
 L’adresse e-mail est masquée par défaut
 et se révèle au survol ou au focus clavier.
 
