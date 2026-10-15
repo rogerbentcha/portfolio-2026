@@ -393,7 +393,7 @@
   flex: 1;
   min-height: 0;
 }
-.portfolio .project-preview-content {
+.portfolio .project-details {
   text-decoration: none;
 }
 .project-media-header {
@@ -411,15 +411,17 @@
   height: 100%;
   object-fit: contain;
 }
+.project-video-controls {
+  display: flex;
+  margin-left: auto;
+}
 .project-video-toggle {
   position: relative;
   z-index: 1;
   display: grid;
   place-items: center;
-  width: 20px;
-  height: 20px;
-  margin-left: auto;
-  margin-right: 12px;
+  width: 44px;
+  height: 44px;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -428,15 +430,11 @@
   cursor: pointer;
   transition: transform 140ms ease-out;
 }
-.project-video-toggle::before {
-  content: '';
-  position: absolute;
-  inset: -12px;
-}
 .project-video-toggle:active {
   transform: scale(0.96);
 }
-.project-video-toggle:focus-visible {
+.project-video-toggle:focus-visible,
+.project-video-trigger:focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: 3px;
 }
@@ -453,6 +451,84 @@
   border-radius: 0;
   background: var(--project-color);
   color: #fff;
+}
+.project-video-trigger {
+  padding: 0;
+  border: 0;
+  cursor: zoom-in;
+}
+.project-video-trigger[data-preview-open='true'] .project-video {
+  visibility: hidden;
+}
+.project-video-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  max-width: calc(100% - 16px);
+  padding: 6px 9px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms ease-out;
+}
+@media (hover: hover) and (pointer: fine) {
+  .project-video-trigger:hover:not([data-preview-open='true']) .project-video-tooltip {
+    opacity: 1;
+  }
+}
+.project-video-dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 64px 24px;
+  border: 0;
+  overflow: hidden;
+  background: transparent;
+  overscroll-behavior: contain;
+  touch-action: none;
+}
+.project-video-dialog[open] {
+  display: grid;
+  place-items: center;
+}
+.project-video-dialog::backdrop {
+  background: transparent;
+}
+.project-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(255 255 255 / 65%);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  pointer-events: none;
+}
+.project-video-preview-frame {
+  position: relative;
+  width: min(1120px, 100%, calc((100dvh - 152px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  background: #000;
+  transform-origin: top left;
+}
+.project-video-preview-controls {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 4px);
+  display: flex;
+}
+.project-video-preview-controls .project-video-toggle {
+  color: #252624;
+}
+.project-video-preview-controls .project-video-toggle:focus-visible {
+  outline-color: #252624;
 }
 .project-thumbnail-initials {
   font-family: var(--font-pixel);
