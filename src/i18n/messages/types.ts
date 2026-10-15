@@ -12,7 +12,14 @@ export interface Messages {
     education: string
     contact: string
   }
-  projects: { openSource: string; mute: string; unmute: string }
+  projects: {
+    openSource: string
+    mute: string
+    unmute: string
+    openPreview: string
+    closePreview: string
+    preview: string
+  }
   notFound: {
     pageTitle: string
     eyebrow: string

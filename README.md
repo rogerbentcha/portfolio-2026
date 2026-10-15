@@ -47,16 +47,21 @@ Les cinq projets — Ferry, Traduko, ShaderLib, FerryUI et Layout Guide — se c
 `src/content/projects.ts` : nom, description bilingue, stack, URL, statut open source et couleur
 unique, vidéo et présence d’une piste audio. Les couleurs restent provisoires. Les cinq vidéos
 locales de `public/projects` tournent en boucle, sans contrôles natifs et avec le son coupé au départ.
-Un badge « Open source » et le bouton de son des vidéos concernées s’affichent au-dessus de l’aperçu.
+Un badge « Open source », le bouton de son des vidéos concernées et un bouton d’agrandissement
+s’affichent au-dessus de l’aperçu. Un clic sur la vidéo ou sur le bouton d’agrandissement ouvre
+un lecteur en boucle, sans contrôles natifs, sur un voile blanc translucide et flouté.
+Une infobulle suit le curseur au survol de la vidéo. Un clic sur le voile, le bouton de fermeture
+ou la touche Échap ramène la vidéo à sa position initiale ; `prefers-reduced-motion` désactive
+le mouvement. La position de lecture et le choix du son sont conservés, et la vidéo de la carte
+est suspendue pendant l’aperçu. La fenêtre modale retient le focus et le restitue au bouton d’ouverture.
 ShaderLib n’affiche pas de bouton de son car sa vidéo est muette. Les vidéos inactives ou hors écran
 sont mises en pause.
 Sur ordinateur, le premier projet est affiché par défaut ; le survol ou le focus d’un autre nom
 révèle sa carte et la dernière sélection reste active. Une grille superposée réserve la hauteur
 de la carte la plus haute pour que les expériences ne bougent pas lors d’un changement de projet.
 Les cartes inactives sont masquées et retirées des interactions et de l’arbre d’accessibilité.
-Le nom et la carte sont des liens
-natifs vers le projet. Sur une colonne étroite, les descriptions et stacks restent visibles et le
-premier tap ouvre le lien.
+Le nom, la description et la stack restent des liens natifs vers le projet. Sur une colonne étroite,
+les descriptions et stacks restent visibles ; un tap sur la vidéo ouvre son aperçu.
 Les cartes empilent un aperçu pleine largeur au format 16:9, la description puis la stack en Pixelify Sans.
 Elles ont des angles droits, sans bordure ni ombre.
 

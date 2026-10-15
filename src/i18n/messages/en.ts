@@ -13,7 +13,14 @@ export const en: Messages = {
     education: 'Education',
     contact: 'Contact',
   },
-  projects: { openSource: 'Open source', mute: 'Mute video', unmute: 'Unmute video' },
+  projects: {
+    openSource: 'Open source',
+    mute: 'Mute video',
+    unmute: 'Unmute video',
+    openPreview: 'Open in preview',
+    closePreview: 'Close preview',
+    preview: 'Video preview',
+  },
   notFound: {
     pageTitle: 'Page not found · Roger BENTCHA',
     eyebrow: 'Error 404',
