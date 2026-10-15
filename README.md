@@ -17,6 +17,8 @@ en 13 px. Les expériences affichent uniquement l’entreprise, les dates et le 
 affichent le diplôme, les dates et l’école en plus petit. Les dates restent à droite sur la ligne
 du titre, y compris sur mobile. Les projets précèdent les expériences dans la page et la navigation,
 sans séparateurs horizontaux entre les sections. Le logo latéral s’affiche sans le nom.
+Un bouton « Télécharger mon CV », fixé en bas à gauche de l’écran, télécharge le PDF de `public/cv`
+dans la langue du site.
 L’adresse e-mail est masquée par défaut
 et se révèle au survol ou au focus clavier.
 
@@ -95,12 +97,13 @@ src/
 Anglais par défaut. Si la langue principale du navigateur est le français (`fr`, `fr-FR`, `fr-CA`…),
 le site s’affiche en français et `<html lang>` suit. Le contenu du CV reste dans `src/content/en.ts`
 et `fr.ts`, et les textes d’interface dans `src/i18n/messages/`. TypeScript vérifie que les deux
-langues exposent les mêmes clés.
+langues exposent les mêmes clés. Le bouton de téléchargement sert `public/cv/roger-bentcha-cv-2026-fr.pdf`
+en français et `public/cv/roger-bentcha-cv-2026-en.pdf` sinon.
 
 ## Thèmes
 
 `ThemeProvider` et les boutons `Button` de ferry-ui pilotent les thèmes clair/sombre. Le thème
 suit le système lors de la première visite, puis le choix manuel est mémorisé sous `portfolio-theme`.
 Le script `themeInitScript` de ferry-ui est injecté dans `<head>` par Vite avant le premier affichage.
-Les couleurs du texte, du fond et des shaders suivent les tokens. Les boutons de thème ont un
-fond translucide avec flou d’arrière-plan.
+Les couleurs du texte, du fond et des shaders suivent les tokens. Les boutons de thème et de
+téléchargement du CV ont un fond translucide avec flou d’arrière-plan.
