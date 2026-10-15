@@ -56,9 +56,6 @@ export function SiteNavigation() {
             {id === 'about' ? t.navigation.about : t.sections[id]}
           </motion.a>
         ))}
-        <motion.a {...entrance.item} href={content.resume} download>
-          {t.navigation.resume}
-        </motion.a>
       </nav>
     </motion.aside>
   )

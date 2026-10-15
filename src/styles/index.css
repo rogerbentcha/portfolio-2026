@@ -256,14 +256,25 @@
   right: 40px;
   z-index: 3;
 }
-.theme-toggle {
+.page-resume-control {
+  position: fixed;
+  bottom: 32px;
+  left: 40px;
+  z-index: 3;
+}
+.theme-toggle,
+.resume-download {
   position: relative;
   background: color-mix(in srgb, var(--color-paper) 60%, transparent);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
-.theme-toggle:hover {
+.theme-toggle:hover,
+.resume-download:hover {
   background: color-mix(in srgb, var(--color-paper) 80%, transparent);
+}
+.portfolio .resume-download {
+  text-decoration: none;
 }
 .theme-toggle::after {
   content: '';
@@ -753,6 +764,10 @@
   .page-theme-control {
     top: 22px;
     right: 24px;
+  }
+  .page-resume-control {
+    bottom: 22px;
+    left: 24px;
   }
   .site-sidebar {
     position: static;

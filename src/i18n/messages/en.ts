@@ -2,11 +2,11 @@ import type { Messages } from './types'
 
 export const en: Messages = {
   theme: { light: 'Switch to the light theme', dark: 'Switch to the dark theme' },
+  resume: 'Download my CV',
   navigation: {
     label: 'Portfolio navigation',
     about: 'About',
     skip: 'Skip to content',
-    resume: 'Download my CV',
   },
   sections: {
     experience: 'Experience',
