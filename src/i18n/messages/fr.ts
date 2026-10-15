@@ -6,6 +6,7 @@ export const fr: Messages = {
     label: 'Navigation du portfolio',
     about: 'À propos',
     skip: 'Aller au contenu',
+    resume: 'Télécharger le CV',
   },
   sections: {
     experience: 'Expérience',

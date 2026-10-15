@@ -5,6 +5,7 @@ export interface Messages {
     label: string
     about: string
     skip: string
+    resume: string
   }
   sections: {
     experience: string

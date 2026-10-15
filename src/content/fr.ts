@@ -40,4 +40,5 @@ export const fr: Portfolio = {
     pitch: 'Écrivez-moi, je réponds vite.',
     links: contactLinks,
   },
+  resume: '/cv/roger-bentcha-cv-2026-fr.pdf',
 }

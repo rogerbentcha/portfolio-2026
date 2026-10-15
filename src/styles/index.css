@@ -163,6 +163,9 @@
 .site-navigation a:hover {
   color: var(--color-ink);
 }
+.site-navigation .site-resume {
+  gap: 6px;
+}
 .portfolio-column {
   position: relative;
   z-index: 1;

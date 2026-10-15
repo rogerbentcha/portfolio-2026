@@ -41,4 +41,6 @@ export interface Portfolio {
     pitch: string
     links: readonly ContactLink[]
   }
+  /** Downloadable PDF CV, served from `public/cv`. */
+  resume: string
 }

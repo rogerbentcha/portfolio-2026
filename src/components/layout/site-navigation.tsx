@@ -1,3 +1,4 @@
+import { Download } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import * as motion from 'motion/react-m'
@@ -56,6 +57,10 @@ export function SiteNavigation() {
             {id === 'about' ? t.navigation.about : t.sections[id]}
           </motion.a>
         ))}
+        <motion.a {...entrance.item} href={content.resume} download className="site-resume">
+          <Download size={12} strokeWidth={1.75} aria-hidden="true" />
+          {t.navigation.resume}
+        </motion.a>
       </nav>
     </motion.aside>
   )
