@@ -15,7 +15,7 @@ const projects: readonly ProjectDefinition[] = [
       fr: 'Déployez depuis un dépôt Git, un dossier ou une image Docker, sans interruption de service. Ajoutez Postgres, Redis, des tâches cron, des domaines personnalisés et HTTPS, le tout sur un seul serveur avec Docker.',
     },
     stack: ['Rust', 'React', 'TypeScript', 'Next.js'],
-    href: 'https://ferry-landing.rogerbentcha.fr/',
+    href: 'https://ferry-docs.rogerbentcha.fr',
     video: '/projects/ferry.mp4',
     openSource: true,
     color: '#4564e8',
