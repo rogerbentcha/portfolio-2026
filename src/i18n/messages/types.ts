@@ -1,6 +1,7 @@
 /** Interface strings. Portfolio content lives in `src/content`. */
 export interface Messages {
   theme: { light: string; dark: string }
+  resume: string
   navigation: {
     label: string
     about: string
@@ -8,8 +9,17 @@ export interface Messages {
   }
   sections: {
     experience: string
+    projects: string
     education: string
     contact: string
+  }
+  projects: {
+    openSource: string
+    mute: string
+    unmute: string
+    openPreview: string
+    closePreview: string
+    preview: string
   }
   notFound: {
     pageTitle: string

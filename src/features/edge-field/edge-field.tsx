@@ -1,18 +1,17 @@
-import { PixelField } from 'ferry-shaders'
+import { Drift } from 'ferry-shaders'
 
-/** The same full-width edge field used on the ferry-shaders documentation page. */
+/** Dithered Drift clouds that fade from the document edges. */
 export function EdgeField({ edge }: { edge: 'top' | 'bottom' }) {
   return (
-    <PixelField
+    <Drift
       className={`edge-field edge-field--${edge}`}
-      origin={edge}
-      color="var(--foreground)"
-      accent="var(--primary-bright)"
-      opacity={0.13}
-      accentOpacity={0.5}
-      speed={0.15}
-      breathing={0.08}
-      fps={20}
+      color="color-mix(in srgb, var(--foreground) 13%, transparent)"
+      midColor="color-mix(in srgb, var(--primary-bright) 40%, transparent)"
+      background="transparent"
+      intensity={0.7}
+      glow={0.12}
+      speed={1.5}
+      fps={30}
       fallback={<div className="edge-field-fallback" />}
     />
   )

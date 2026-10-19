@@ -1,4 +1,5 @@
 import { contactLinks, identity } from './shared'
+import { getProjects } from './projects'
 import type { Portfolio } from './types'
 
 export const en: Portfolio = {
@@ -22,6 +23,7 @@ export const en: Portfolio = {
       subtitle: 'Full-stack JavaScript/TypeScript developer, work-study',
     },
   ],
+  projects: getProjects('en'),
   education: [
     {
       title: "Master's in Software Architecture",
@@ -38,4 +40,5 @@ export const en: Portfolio = {
     pitch: "Write to me, I'll get back to you quickly.",
     links: contactLinks,
   },
+  resume: '/cv/roger-bentcha-cv-2026-en.pdf',
 }

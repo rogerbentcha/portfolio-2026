@@ -2,6 +2,7 @@ import type { Messages } from './types'
 
 export const fr: Messages = {
   theme: { light: 'Passer au thème clair', dark: 'Passer au thème sombre' },
+  resume: 'Télécharger mon CV',
   navigation: {
     label: 'Navigation du portfolio',
     about: 'À propos',
@@ -9,8 +10,17 @@ export const fr: Messages = {
   },
   sections: {
     experience: 'Expérience',
+    projects: 'Projets',
     education: 'Formation',
     contact: 'Contact',
+  },
+  projects: {
+    openSource: 'Open source',
+    mute: 'Couper le son',
+    unmute: 'Activer le son',
+    openPreview: 'Ouvrir l’aperçu',
+    closePreview: 'Fermer l’aperçu',
+    preview: 'Aperçu vidéo',
   },
   notFound: {
     pageTitle: 'Page introuvable · Roger BENTCHA',

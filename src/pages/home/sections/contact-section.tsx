@@ -4,11 +4,11 @@ import { TextLink } from '@/components/ui/text-link'
 import { useI18n } from '@/i18n'
 import { useTextEntrance } from '@/lib/motion'
 
-export function ContactSection({ number }: { number: number }) {
+export function ContactSection() {
   const { t, content } = useI18n()
   const entrance = useTextEntrance()
   return (
-    <Section id="contact" number={number} title={t.sections.contact}>
+    <Section id="contact" title={t.sections.contact}>
       <motion.p {...entrance.single} className="m-0">
         {content.contact.pitch}
       </motion.p>

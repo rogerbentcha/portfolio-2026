@@ -2,6 +2,7 @@ import type { Messages } from './types'
 
 export const en: Messages = {
   theme: { light: 'Switch to the light theme', dark: 'Switch to the dark theme' },
+  resume: 'Download my CV',
   navigation: {
     label: 'Portfolio navigation',
     about: 'About',
@@ -9,8 +10,17 @@ export const en: Messages = {
   },
   sections: {
     experience: 'Experience',
+    projects: 'Projects',
     education: 'Education',
     contact: 'Contact',
+  },
+  projects: {
+    openSource: 'Open source',
+    mute: 'Mute video',
+    unmute: 'Unmute video',
+    openPreview: 'Open in preview',
+    closePreview: 'Close preview',
+    preview: 'Video preview',
   },
   notFound: {
     pageTitle: 'Page not found · Roger BENTCHA',

@@ -3,6 +3,7 @@ import { TimelineEntry } from '@/components/ui/timeline-entry'
 import { useI18n } from '@/i18n'
 import { ContactSection } from './sections/contact-section'
 import { Hero } from './sections/hero'
+import { ProjectsSection } from './sections/projects-section'
 
 export function HomePage() {
   const { t, content } = useI18n()
@@ -15,19 +16,21 @@ export function HomePage() {
 
       <Hero />
 
-      <Section id="experience" number={1} title={t.sections.experience}>
+      <ProjectsSection />
+
+      <Section id="experience" title={t.sections.experience}>
         {experience.map((entry) => (
           <TimelineEntry key={entry.title} entry={entry} />
         ))}
       </Section>
 
-      <Section id="education" number={2} title={t.sections.education}>
+      <Section id="education" title={t.sections.education}>
         {education.map((entry) => (
           <TimelineEntry key={entry.title} entry={entry} />
         ))}
       </Section>
 
-      <ContactSection number={3} />
+      <ContactSection />
     </>
   )
 }

@@ -11,6 +11,18 @@ export interface ContactLink {
   text: string
 }
 
+export interface Project {
+  id: string
+  name: string
+  description: string
+  stack: readonly string[]
+  href: string
+  color: string
+  openSource: boolean
+  video?: string
+  videoHasAudio?: boolean
+}
+
 interface Profile {
   firstName: string
   lastName: string
@@ -23,9 +35,12 @@ interface Profile {
 export interface Portfolio {
   profile: Profile
   experience: readonly TimelineEntry[]
+  projects: readonly Project[]
   education: readonly TimelineEntry[]
   contact: {
     pitch: string
     links: readonly ContactLink[]
   }
+  /** Downloadable PDF CV, served from `public/cv`. */
+  resume: string
 }
