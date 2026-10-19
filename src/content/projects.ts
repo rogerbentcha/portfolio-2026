@@ -41,7 +41,11 @@ const projects: readonly ProjectDefinition[] = [
       fr: 'Une bibliothèque de shaders React avec 10 effets sous forme de composants.',
     },
     stack: ['React', 'TypeScript', 'WebGPU'],
+<<<<<<< HEAD
     href: 'https://shaderui.ferryd.dev/',
+=======
+    href: 'https://shaderui.rogerbentcha.fr/',
+>>>>>>> a14769c (fix: sync dev with main and update Ferry link (LAB-35) (#13))
     video: '/projects/shaderlib.mp4',
     videoHasAudio: false,
     openSource: true,
@@ -55,7 +59,11 @@ const projects: readonly ProjectDefinition[] = [
       fr: 'Un design system React pour les tableaux de bord, les consoles d’administration et les outils de développement.',
     },
     stack: ['React', 'Tailwind CSS', 'TypeScript', 'Radix UI', 'Storybook'],
+<<<<<<< HEAD
     href: 'https://ferry-ui.ferryd.dev/',
+=======
+    href: 'https://ferry-ui.rogerbentcha.fr/',
+>>>>>>> a14769c (fix: sync dev with main and update Ferry link (LAB-35) (#13))
     video: '/projects/ferry-ui.mp4',
     videoHasAudio: true,
     openSource: true,
