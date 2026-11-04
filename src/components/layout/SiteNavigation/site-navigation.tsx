@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import * as motion from 'motion/react-m'
-import { Monogram } from '@/components/ui/monogram'
+import { Monogram } from '@/components/ui/Monogram/monogram'
 import { useI18n } from '@/i18n'
 import { useTextEntrance } from '@/lib/motion'
 

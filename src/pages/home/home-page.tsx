@@ -1,5 +1,5 @@
-import { Section } from '@/components/ui/section'
-import { TimelineEntry } from '@/components/ui/timeline-entry'
+import { Section } from '@/components/ui/Section/section'
+import { TimelineEntry } from '@/components/ui/TimelineEntry/timeline-entry'
 import { useI18n } from '@/i18n'
 import { ContactSection } from './sections/contact-section'
 import { Hero } from './sections/hero'

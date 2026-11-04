@@ -1,5 +1,5 @@
-import { EdgeField } from '@/features/edge-field/edge-field'
-import { ThemeToggle } from '@/components/ui/theme-toggle'
+import { EdgeField } from '@/components/ui/EdgeField/edge-field'
+import { ThemeToggle } from '@/components/ui/ThemeToggle/theme-toggle'
 import { useI18n } from '@/i18n'
 
 const YEAR = new Date().getFullYear()

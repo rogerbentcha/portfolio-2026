@@ -23,14 +23,14 @@ export const fr: Messages = {
     preview: 'Aperçu vidéo',
   },
   notFound: {
-    pageTitle: 'Page introuvable · Roger BENTCHA',
+    pageTitle: 'Page introuvable',
     eyebrow: 'Erreur 404',
     title: 'Hors carte',
     body: "Cette page n'existe pas ou a été déplacée.",
     back: 'Retour au portfolio',
   },
   routeError: {
-    pageTitle: 'Erreur · Roger BENTCHA',
+    pageTitle: 'Erreur',
     eyebrow: 'Quelque chose a cassé',
     unknown: 'Erreur inconnue',
     back: "Revenir à l'accueil",

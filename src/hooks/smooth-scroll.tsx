@@ -2,7 +2,8 @@ import Lenis from 'lenis'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router'
 
-export function SmoothScroll() {
+/** Run Lenis smooth scrolling, restarting it on each route change. */
+export function useSmoothScroll() {
   const { pathname } = useLocation()
 
   useEffect(() => {
@@ -15,6 +16,4 @@ export function SmoothScroll() {
 
     return () => lenis.destroy()
   }, [pathname])
-
-  return null
 }

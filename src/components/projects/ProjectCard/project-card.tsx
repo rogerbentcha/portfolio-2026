@@ -2,7 +2,7 @@ import { Maximize2, Volume2, VolumeX } from 'lucide-react'
 import { useEffect, useRef, useState, type MouseEvent, type PointerEvent, type Ref } from 'react'
 import type { Project } from '@/content/types'
 import { useI18n } from '@/i18n'
-import { ProjectVideoPreview } from './project-video-preview'
+import { ProjectVideoPreview } from '@/components/projects/ProjectVideoPreview/project-video-preview'
 
 interface ProjectCardProps {
   project: Project

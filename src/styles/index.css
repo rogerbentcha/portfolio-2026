@@ -12,6 +12,13 @@
 }
 
 @layer base {
+  :root {
+    /* Base size of body text. */
+    --font-size-body: 15px;
+    /* Secondary text: labels, metadata, navigation. */
+    --font-size-small: 14px;
+  }
+
   * {
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -27,6 +34,7 @@
     background: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-sans);
+    font-size: var(--font-size-body);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -66,9 +74,9 @@
 /* Product overrides of ferry-ui's source tokens; components and shaders share them. */
 :root {
   --background: #ffffff;
-  --foreground: #252624;
-  --foreground-light: #70716d;
-  --foreground-lighter: #70716d;
+  --foreground: #10131c;
+  --foreground-light: #555b69;
+  --foreground-lighter: #555b69;
   --border: #e4e5e0;
   --success: #6a7b60;
 }
@@ -89,7 +97,7 @@
   min-height: 100svh;
   background: var(--color-paper);
   color: var(--color-ink);
-  font-size: 13px;
+  font-size: var(--font-size-body);
   line-height: 1.5;
 }
 .portfolio h1,
@@ -133,7 +141,7 @@
   align-items: flex-start;
   gap: 16px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: var(--font-size-body);
   font-weight: 500;
 }
 .portfolio .site-brand > span,
@@ -156,7 +164,7 @@
   align-items: center;
   min-height: 40px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: var(--font-size-small);
   color: var(--color-ink-soft);
 }
 .site-navigation a[aria-current],
@@ -193,14 +201,14 @@
 }
 .hero-role {
   margin: 16px 0 24px;
-  font-size: 14px;
+  font-size: var(--font-size-small);
   letter-spacing: -0.015em;
 }
 .hero-intro {
   margin: 0;
   max-width: 42em;
   color: var(--color-ink-soft);
-  font-size: 13px;
+  font-size: var(--font-size-body);
   line-height: 1.55;
 }
 /* Full-width Drift fields fade into the page from the document edges. */
@@ -306,26 +314,26 @@
 }
 .portfolio .entry-heading h3 {
   min-width: 0;
-  font-size: 13px;
+  font-size: var(--font-size-body);
   line-height: 1.4;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 .portfolio .entry-period {
   flex-shrink: 0;
-  font-size: 11px;
+  font-size: var(--font-size-small);
   letter-spacing: 0;
   text-transform: none;
   color: var(--color-ink-soft);
   font-variant-numeric: tabular-nums;
 }
 .portfolio .entry-subtitle {
-  font-size: 12px;
+  font-size: var(--font-size-small);
   font-style: normal;
   line-height: 1.5;
 }
 .portfolio #education .entry-subtitle {
-  font-size: 11px;
+  font-size: var(--font-size-small);
 }
 
 /* The project index stays quiet until a name is explored. */
@@ -479,7 +487,7 @@
   padding: 6px 9px;
   background: var(--color-ink);
   color: var(--color-paper);
-  font-size: 12px;
+  font-size: var(--font-size-small);
   line-height: 1.4;
   white-space: nowrap;
   pointer-events: none;
@@ -535,10 +543,10 @@
   display: flex;
 }
 .project-video-preview-controls .project-video-toggle {
-  color: #252624;
+  color: #10131c;
 }
 .project-video-preview-controls .project-video-toggle:focus-visible {
-  outline-color: #252624;
+  outline-color: #10131c;
 }
 .project-thumbnail-initials {
   font-family: var(--font-pixel);
@@ -550,7 +558,7 @@
 .project-open-source {
   padding: 5px 8px;
   font-family: var(--font-pixel);
-  font-size: 12px;
+  font-size: var(--font-size-small);
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0;
@@ -575,7 +583,7 @@
   padding: 14px 0;
 }
 .project-description {
-  font-size: 13px;
+  font-size: var(--font-size-body);
   line-height: 1.55;
   letter-spacing: -0.01em;
   text-wrap: pretty;
@@ -591,7 +599,7 @@
   border: 1px solid var(--border);
   border-radius: 999px;
   font-family: var(--font-pixel);
-  font-size: 12px;
+  font-size: var(--font-size-small);
   line-height: 1.4;
   white-space: nowrap;
 }
@@ -660,7 +668,7 @@
   }
 }
 .portfolio #contact > p {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   line-height: 1.5;
   letter-spacing: -0.015em;
   max-width: 40em;
@@ -674,13 +682,13 @@
 }
 .portfolio #contact > ul li > span:first-child {
   min-width: 70px;
-  font-size: 12px;
+  font-size: var(--font-size-small);
   letter-spacing: 0;
   text-transform: none;
   color: var(--color-ink-soft);
 }
 .portfolio #contact a {
-  font-size: 12px;
+  font-size: var(--font-size-small);
   overflow-wrap: anywhere;
 }
 .email-link {
@@ -706,7 +714,7 @@
   margin-top: 40px;
   border-top: 0;
   padding: 32px 0 112px;
-  font-size: 11px;
+  font-size: var(--font-size-small);
   color: var(--foreground-light);
 }
 .footer-layout {
@@ -790,7 +798,7 @@
   }
   .site-navigation a {
     min-height: 44px;
-    font-size: 12px;
+    font-size: var(--font-size-small);
   }
   .portfolio-main {
     gap: 36px;

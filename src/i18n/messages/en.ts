@@ -23,14 +23,14 @@ export const en: Messages = {
     preview: 'Video preview',
   },
   notFound: {
-    pageTitle: 'Page not found · Roger BENTCHA',
+    pageTitle: 'Page not found',
     eyebrow: 'Error 404',
     title: 'Off the map',
     body: "This page doesn't exist or has moved.",
     back: 'Back to the portfolio',
   },
   routeError: {
-    pageTitle: 'Error · Roger BENTCHA',
+    pageTitle: 'Error',
     eyebrow: 'Something broke',
     unknown: 'Unknown error',
     back: 'Back to home',

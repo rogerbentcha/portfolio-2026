@@ -1,8 +1,8 @@
 import { useRef, useState, type CSSProperties } from 'react'
 import * as motion from 'motion/react-m'
-import { Section } from '@/components/ui/section'
-import { ProjectCard } from '@/features/projects/project-card'
-import { RubberBand } from '@/features/projects/rubber-band'
+import { Section } from '@/components/ui/Section/section'
+import { ProjectCard } from '@/components/projects/ProjectCard/project-card'
+import { RubberBand } from '@/components/projects/RubberBand/rubber-band'
 import { useI18n } from '@/i18n'
 import { useTextEntrance } from '@/lib/motion'
 

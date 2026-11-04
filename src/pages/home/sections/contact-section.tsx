@@ -1,6 +1,6 @@
 import * as motion from 'motion/react-m'
-import { Section } from '@/components/ui/section'
-import { TextLink } from '@/components/ui/text-link'
+import { Section } from '@/components/ui/Section/section'
+import { TextLink } from '@/components/ui/TextLink/text-link'
 import { useI18n } from '@/i18n'
 import { useTextEntrance } from '@/lib/motion'
 
